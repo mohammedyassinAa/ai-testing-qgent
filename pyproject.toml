@@ -1,0 +1,21 @@
+[project]
+name = "ai-testing-qgent"
+version = "0.1.0"
+description = "Python AI Testing Agent"
+authors = ["mohammedyassinAa <your-email@example.com>"]
+license = "MIT"
+
+[tool.poetry]
+dependencies = { 
+    python = "^3.8", 
+    openai = "^0.27.0", 
+    python-dotenv = "^0.20.0", 
+    pydantic = "^1.10.0", 
+    requests = "^2.28.0", 
+    rich = "^12.0.0", 
+    pytest = "^7.0.0", 
+    playwright = "^1.23.0"
+}
+
+[tool.poetry.scripts]
+qgent = "src.cli:main"
